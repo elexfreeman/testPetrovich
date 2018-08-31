@@ -2,7 +2,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const fs = require('fs')
+const fs = require('fs');
 
 function generateHtmlPlugins(templateDir) {
   const templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
@@ -99,16 +99,8 @@ module.exports = {
         to: './fonts'
       },
       {
-        from: './src/favicon',
-        to: './favicon'
-      },
-      {
         from: './src/img',
         to: './img'
-      },
-      {
-        from: './src/uploads',
-        to: './uploads'
       }
     ]),
   ].concat(htmlPlugins)
