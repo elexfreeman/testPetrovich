@@ -1,51 +1,53 @@
-
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
 
-    <link rel="shortcut icon" href="favicon/favicon.ico">
-    <link rel="stylesheet" href="css/style.bundle.css">
-     <title>Заголовок | Проект</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+
+  <link rel="shortcut icon" href="favicon/favicon.ico">
+  <link rel="stylesheet" href="css/style.bundle.css">
+  <title>Заголовок | Проект</title>
+</head>
+
+<body>
 
 
-<div class="container">
+  <div class="container">
 
     <div class="login-form">
 
-        <div id="login-done" class="login-done hide">
-            <div>Здраствуйте
-                <div id="user-name"></div>
-            </div>
+      <div id="login-done" class="login-done hide">
+        <div>Здраствуйте
+          <div id="user-name"></div>
         </div>
+      </div>
 
-        <div id="login-form">
-            <div class="login-form__title">Вход</div>
+      <div id="login-form">
+        <div class="login-form__title">Вход</div>
 
-            <div class="login-form__input-container">
-                <div class="input-group-from">
-                    <img src="/img/email-ico.png"/>
-                    <input id="login" placeholder="Логин"/>
+        <div class="login-form__input-container">
+          <div class="input-group-from">
+            <img src="/img/email-ico.png" />
+            <input id="login" placeholder="Логин" />
 
-                </div>
-                <div class="input-group-from">
-                    <img src="/img/pass-ico.png"/>
-                    <input id="pass" type="password" placeholder="Пароль"/>
-                </div>
-            </div>
-            <div id="error-msg" class="error hide">
-                Ошибка ввода логина или пароля!
-            </div>
-            <button id="login-button" class="login-form__login-button">Войти</button>
+          </div>
+          <div class="input-group-from">
+            <img src="/img/pass-ico.png" />
+            <input id="pass" type="password" placeholder="Пароль" />
+          </div>
         </div>
+        <div id="error-msg" class="error hide">
+          Ошибка ввода логина или пароля!
+        </div>
+        <button id="login-button" class="login-form__login-button">Войти</button>
+      </div>
     </div>
-</div>
+  </div>
 
 
-<script src="js/bundle.js"></script>
+  <script src="js/bundle.js"></script>
 </body>
+
 </html>
